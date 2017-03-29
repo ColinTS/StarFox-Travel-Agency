@@ -1,0 +1,37 @@
+body{
+  background-color: #99CCCC;
+  margin: 0;
+}
+
+.navigation {
+    display: flex;
+    background-color: #333;
+    height: 80px;
+    width: 100%;
+    margin-top: 1%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .logo-container {
+      display: flex;
+      .logo g path,
+      .logo g ellipse {
+      fill: white;
+      }
+      .font-logo {
+      color: #99CCCC;
+      align-self: center;
+        }
+      }
+    .menu-icon {
+      height: 50px;
+      width: 50px;
+    }
+}
+
+.first-page {
+  background-color: #99CCCC;
+  display: flex;
+}

@@ -1,0 +1,29 @@
+body {
+  background-color: #99CCCC;
+  margin: 0; }
+
+.navigation {
+  display: flex;
+  background-color: #333;
+  height: 80px;
+  width: 100%;
+  margin-top: 1%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  .navigation .logo-container {
+    display: flex; }
+    .navigation .logo-container .logo g path,
+    .navigation .logo-container .logo g ellipse {
+      fill: white; }
+    .navigation .logo-container .font-logo {
+      color: #99CCCC;
+      align-self: center; }
+  .navigation .menu-icon {
+    height: 50px;
+    width: 50px; }
+
+.first-page {
+  background-color: #99CCCC;
+  display: flex; }

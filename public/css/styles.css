@@ -1,6 +1,7 @@
 body {
   background-color: #99CCCC;
-  margin: 0; }
+  margin: 0;
+  font-family: 'Open Sans'; }
 
 .navigation {
   display: flex;
@@ -13,17 +14,97 @@ body {
   flex-direction: row;
   flex-wrap: nowrap; }
   .navigation .logo-container {
-    display: flex; }
+    display: flex;
+    margin-left: 4%; }
     .navigation .logo-container .logo g path,
     .navigation .logo-container .logo g ellipse {
       fill: white; }
     .navigation .logo-container .font-logo {
       color: #99CCCC;
-      align-self: center; }
+      align-self: center;
+      margin-left: 10%;
+      font-weight: 300;
+      font-size: 28px; }
   .navigation .menu-icon {
     height: 50px;
-    width: 50px; }
+    width: 50px;
+    margin-right: 4%; }
 
-.first-page {
+.first-section {
   background-color: #99CCCC;
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  text-align: center; }
+  .first-section .hero-image {
+    width: 300px;
+    height: 300px; }
+  .first-section .hero-text {
+    font-weight: 300;
+    font-size: 32px;
+    padding-bottom: 10%; }
+  .first-section .hero-button {
+    background-color: #666666;
+    border: none;
+    color: white;
+    width: 500px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 300;
+    box-shadow: 0 7px #333; }
+
+.second-section {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10%; }
+  .second-section .link {
+    background-color: #666666;
+    border: none;
+    color: white;
+    width: 500px;
+    margin-top: 10%;
+    border-radius: 5px;
+    padding: 2% 0; }
+    .second-section .link .title {
+      font-size: 28px;
+      padding-top: 2%;
+      padding-bottom: 4%;
+      border-bottom: 1px solid #505151; }
+    .second-section .link .price {
+      padding-top: 12%;
+      border-top: 1px solid grey; }
+      .second-section .link .price h3 {
+        font-size: 62px;
+        font-weight: 200;
+        border-bottom: 7px solid white;
+        display: inline; }
+    .second-section .link .sub-text {
+      font-size: 14px;
+      font-weight: 200;
+      padding: 12% 25% 6%; }
+
+.more-deals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  color: white;
+  font-size: 24px;
+  font-weight: 400; }
+  .more-deals .arrow {
+    width: 40px;
+    height: 40px;
+    padding-left: 3%; }
+
+.footer {
+  background-color: #333;
+  color: grey;
+  font-size: 12px;
+  text-align: center;
+  padding: 14px 27%; }

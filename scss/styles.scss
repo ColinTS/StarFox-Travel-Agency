@@ -1,37 +1,131 @@
 body{
   background-color: #99CCCC;
   margin: 0;
+  font-family: 'Open Sans';
 }
 
 .navigation {
-    display: flex;
-    background-color: #333;
-    height: 80px;
-    width: 100%;
-    margin-top: 1%;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  display: flex;
+  background-color: #333;
+  height: 80px;
+  width: 100%;
+  margin-top: 1%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 
-    .logo-container {
-      display: flex;
-      .logo g path,
-      .logo g ellipse {
-      fill: white;
-      }
-      .font-logo {
-      color: #99CCCC;
-      align-self: center;
-        }
-      }
-    .menu-icon {
-      height: 50px;
-      width: 50px;
+  .logo-container {
+    display: flex;
+    margin-left: 4%;
+    .logo g path,
+    .logo g ellipse {
+    fill: white;
     }
+    .font-logo {
+    color: #99CCCC;
+    align-self: center;
+    margin-left: 10%;
+    font-weight: 300;
+    font-size: 28px;
+      }
+    }
+  .menu-icon {
+    height: 50px;
+    width: 50px;
+    margin-right: 4%;
+  }
 }
 
-.first-page {
+.first-section {
   background-color: #99CCCC;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+
+  .hero-image {
+    width: 300px;
+    height: 300px;
+  }
+  .hero-text {
+    font-weight: 300;
+    font-size: 32px;
+    padding-bottom: 10%;
+  }
+  .hero-button{
+    background-color: #666666;
+    border: none;
+    color: white;
+    width: 500px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 300;
+    box-shadow: 0 7px #333;
+  }
+}
+
+.second-section {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10%;
+  .link {
+    background-color: #666666;
+    border: none;
+    color: white;
+    width: 500px;
+    margin-top: 10%;
+    border-radius: 5px;
+    padding: 2% 0;
+    .title{
+      font-size: 28px;
+      padding-top: 2%;
+      padding-bottom: 4%;
+      border-bottom: 1px solid #505151;
+    }
+    .price{
+      padding-top: 12%;
+      border-top: 1px solid grey;
+      h3 {
+        font-size: 62px;
+        font-weight: 200;
+        border-bottom: 7px solid white;
+        display: inline;
+      }
+    }
+    .sub-text {
+      font-size: 14px;
+      font-weight: 200;
+      padding: 12% 25% 6%;
+    }
+  }
+}
+
+.more-deals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  .arrow {
+    width: 40px;
+    height: 40px;
+    padding-left: 3%;
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: grey;
+  font-size: 12px;
+  text-align: center;
+  padding: 14px 27%;
 }
